@@ -57,7 +57,7 @@ const generateCard = moviesInfo => {
 generateCard(moviesList)
 
 function onSearch(element) {
-    const searchInput = element.value;
+    const searchInput = element.value.toLowerCase();
     const filteredCards = moviesList.filter(movie => {
         return movie.title.includes(searchInput)
     })
